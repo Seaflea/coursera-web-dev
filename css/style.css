@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#heading {
+	font-size: 1.75em;	
+	text-align: center;
+	margin: 30px 0 15px 0;
+}
+#menu-container {
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-title {
+	border: 1px solid;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	font-size: 1.25em;
+	padding: 5px 35px;
+}
+.menu-item {
+	border: 1px solid;
+	position: relative;
+	padding: 27px 15px 0px 15px;
+	background: #CCC;
+	margin: 10px 10px;
+}
+#carnivore .menu-title {
+	background: #ad1f1f;
+}
+#omnivore .menu-title {
+	background: #ffcc00;
+}
+#herbivore .menu-title {
+	background: #4d9933;
+}
+
+/********** Large devices **********/
+@media (min-width: 992px) {
+  .menu-text {
+	margin-top: 20px;
+	height: 170px;
+  }
+  .col-lg-4{
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-text {
+	margin-top: 20px;
+	height: 120px;
+  }
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Small devices **********/
+@media (max-width: 767px) {
+  .menu-text {
+	margin-top: 20px;
+  }	
+  #menu-container {
+    width: 90%;
+  }
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
